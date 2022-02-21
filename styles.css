@@ -1,0 +1,41 @@
+:root {
+    --div-backgroud-color: #D84282;
+    --item-width: 400px;
+    --item-height: 50px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    position: relative;
+    margin: 150px;
+    background-color: var(--div-backgroud-color);
+    width: var(--item-width);
+    height: 250px;
+}
+
+div::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: var(--item-width);
+    height: var(--item-height);
+    top: 50px;
+    left: 0px;
+    background-color: #fff;
+}
+
+div::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: var(--item-width);
+    height: var(--item-height);
+    top: 150px;
+    left: 0px;
+    background-color: #fff;
+}
